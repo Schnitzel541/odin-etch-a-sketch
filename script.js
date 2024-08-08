@@ -13,7 +13,7 @@ function generateGrid(gridSize) {
 
     for (let i = 0; i < gridSize * gridSize ; i++) {
         let square = document.createElement("div");
-        square.style.backgroundColor = "blue";
+        square.style.backgroundColor = "white";
         square.style.flex = `1 1 calc(100% / ${gridSize})`;
 
         square.style.width = `${squareSize}px`;
