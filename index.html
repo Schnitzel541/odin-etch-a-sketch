@@ -5,11 +5,11 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="upperContent"><h1>Size:</h1><h3 class="valueInput"></h3></div>
         <div class="content">
             <input type="color" id="colorWheel">
-            <input id="gridSizeInput" type="number">
-            <button>Generate</button>
-            <button onclick="generateGrid(32)">Reset</button>
+            <input id="gridSizeInput" type="range" step="16" min="16" max="128">
+            <button id="generateButton">Generate Grid</button>
         </div>
         <div class="gridContainer"></div>
         <script src="script.js"></script>
