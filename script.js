@@ -1,7 +1,9 @@
 let gridContainer = document.querySelector(".gridContainer");
-
+let colorWheel = document.querySelector("#colorWheel");
+let gridSizeInput = document.querySelector("#gridSizeInputs");
 
 function generateGrid(gridSize) {
+    gridContainer.innerHTML = "";
     const gridContainerSize = 512;
     const squareSize = gridContainerSize / gridSize;
 
@@ -14,7 +16,11 @@ function generateGrid(gridSize) {
         square.style.height = `${squareSize}px`;
 
         gridContainer.insertAdjacentElement("beforeend", square);
+
+        square.addEventListener('mousemove', () => {
+            square.style.backgroundColor = `${colorWheel.value}`
+        })
     }
 }
 
-generateGrid(18);
+generateGrid(32);

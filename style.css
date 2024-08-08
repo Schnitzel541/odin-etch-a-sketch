@@ -3,6 +3,7 @@ body {
     margin: 0;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -18,8 +19,6 @@ body {
     padding: 0;
 }
 
-.square {
-    width: 32px;
-    height: 32px;
-    outline: 1px solid #000000;
+.square:hover {
+    opacity: 0;
 }
