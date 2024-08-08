@@ -1,0 +1,17 @@
+Initial phase:
+- Define the HTML content
+  |_ Container div, including a class
+     |_ This div will contain the entire grid
+     |_ The container will be styled (flex-direction: row;, flex-wrap: wrap; as guidance) 
+- Create the functionality
+  |_ Creating the divs
+  |_ Creating the button to increase the amount of divs generated (16x16, 64x64, 128x128 etc.)
+
+
+
+- CSS styling
+  |_ This will be the final undertaking
+  |_ Make sure everything pops nicely
+  |_ !!DO NOT!! research / use CSS-Grid, as this has not been taught yet up to this point
+
+
